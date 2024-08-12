@@ -1,0 +1,66 @@
+.blind{
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+.inner{
+    width: 1152px;
+    margin: 0 auto;
+    min-width: 1152px;
+}
+
+.headline{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.35em;
+}
+
+.group-link ul li i{
+  
+}
+
+.hidden{
+    overflow: hidden;
+}
+.btn-top{
+    display: inline-block;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    width: 34px;
+    height: 34px;
+    left: 50%;
+    margin-left: 600px;
+    transition: 1s;
+    z-index: 1000000;
+    transform: translateY(98px);
+}
+.btn-top.on{
+    opacity: 1;
+    visibility: visible;
+    bottom: 98px;
+    transform: translateY(0px);
+    transition: 1s;
+
+}
+
+/* 스프라이트처리 */
+
+.sc-visual .title .link::before{
+    background-image: url('https://www.seoul.go.kr/res_newseoul/images/main/icon_main_2019.png');
+    background-repeat: no-repeat;
+
+}
+
+
+/* 2 */
+
+.sc-visual .control-area .btn::before{
+    background-image: url('https://www.seoul.go.kr/res_newseoul/images/main/icon_set_common_2019.png');
+    background-repeat: no-repeat;
+}
+

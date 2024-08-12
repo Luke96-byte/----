@@ -1,0 +1,315 @@
+@import './font.css';
+@import './reset.css';
+@import './common.css';
+
+.wrapper{
+    min-width: 1152px;
+}
+#header{}
+
+/* --------------------------------------- */
+#header .group-nav{
+    display: flex;
+    gap: 70px;
+}
+
+#header .group-nav .logo{
+    display: flex;
+    height: 18.5px;
+    margin-top: 8px;
+}
+#header .group-nav .logo a{
+    display: block;
+    width: 105px;
+    height: 27px;
+    background: url(../images/sp_logo.png) no-repeat -5px -165px;
+}
+
+#header .group-nav .menu-list{
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#header .group-nav .menu-list .menu-item{
+    font-size: 16px;
+    height: 48px;
+    line-height: 48px;
+    font-weight: 700;
+}
+#header .group-nav .menu-list .menu-item:hover{
+    color: #2292e9;
+}
+#header .group-nav .menu-list .menu-item a{}
+
+#header .group-nav .util-list{
+    display: flex;
+}
+#header .group-nav .util-list a{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 48px;
+    padding: 0 10px;
+
+}
+
+/* ------------------------------------ */
+.group-search{
+    height: 120px;
+    position: relative;
+    display: flex;
+    gap: 22px;
+    justify-content: space-between;
+}
+.group-search .search-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 770px;
+}
+.group-search .logo{
+    background: url(../images/logo2.png);
+    display: block;
+    width: 133px;
+    height: 51px;
+}
+
+.group-search .search-left .search-area{
+    width: 520px;
+    height: 42px;
+    border: 3px solid #2292e9;
+    box-sizing: border-box;
+
+}
+.group-search .search-left .search-area form{
+}
+.group-search .search-left .search-area fieldset{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border: 0;
+    }
+.group-search .search-left .search-area .input-search{
+    width: calc(100% - 42px);
+    border: 0;
+    padding: 0 10px;
+    height: 34px;
+    line-height: 38px;
+}
+input::placeholder {color:#1E6CB3;}
+
+.group-search .search-left .search-area .control-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.group-search .search-left .search-area .btn-keyboard{
+    background-image: url(../images/btn-keyboard.png);
+    width: 29px; height: 16px;
+
+}
+.group-search .btn-submit{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    background: url(../images/sp_logo.png) no-repeat -32px -97px;
+    float: right;
+}
+
+.group-search .search-right {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+.group-search .search-right .whether-area{}
+.group-search .search-right .whether-area a{
+    display: flex;
+}
+.group-search .search-right .whether-area .img-wrap{
+    display: flex;
+    align-items: center;
+}
+.group-search .search-right .whether-area .text-wrap{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.35em;
+    font-size: 25px;
+    margin-right: 5px;
+}
+.group-search .search-right .whether-area .temp-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.group-search .search-right .whether-area .dust-box{
+    display: flex;
+}
+
+.group-search .search-right .whether-area .desc{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: -0.1em;
+}
+.group-search .search-right .whether-area .dust{
+    font-size: 13px;
+    letter-spacing: -1.5px; 
+}
+.group-search .search-right .whether-area .green{
+    color: #26890C;
+    font-size: 14px;
+}
+
+
+.group-search .search-right .language-area{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 110px;
+    height: 21px;
+    
+}
+.group-search .search-right .language-area .btn-language{
+    width: 80px;
+    height: 21px;
+    border-color: #afcfea;
+    color: #1E6CB3;
+    font-size: 12px;
+    padding: 0 0 0 2px;
+    box-sizing: border-box;
+    line-height: 21px;
+}
+.group-search .search-right .language-area .btn-go{
+    width: 30px;
+    font-size: 11px;
+    color: #fff;
+    background-color: #1E6CB3;
+    border: 0;
+    height: 21px;
+    padding: 0;
+}
+.group-search .logo-myseoul{
+    position: absolute;
+    right: 0;
+    background: url(../images/logo3.png);
+    display: block;
+    width: 74px; height: 47px;
+
+}
+
+/* ----푸터---------------------------------- */
+
+footer{
+    
+}
+footer .group-link{}
+footer .group-link .link-list{
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+}
+footer .group-link .link-list .link-item{
+    
+}
+footer .group-link .link-list .link-item.deco{
+    position: relative;
+}
+footer .group-link .link-list .link-item.deco::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    display: block;
+    width: 1px;
+    height: 14px;
+    margin-top: -6px;
+    background: #dcdcdc;
+}
+footer .group-link .link-list .link-item.kc{
+    display: flex;
+    position: relative;
+    width: 114px;
+    height: 24px;
+    margin-right: 20px;
+
+}
+footer .group-link .link-list .link-item.kc a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    color: #636363;
+    background: url(../images/sp_sns.png) no-repeat 0 -30px; ;
+}
+
+footer .group-link .link-list .link-item a{
+    font-size: 12px;
+    color: #636363;
+    display: block;
+}
+footer .group-link .link-list .bold{
+    font-weight: bold;
+    
+}
+
+footer .group-addr{
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-between;
+}
+footer .group-addr .left{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+footer .group-addr .left .call-logo{
+    width: 108px;
+    height: 45px;
+    background: url(../images/sp_logo.png) no-repeat -180px 0;
+}
+footer .group-addr .addr-area{
+    font-weight: 500;
+    color: #636363;
+    padding-bottom: 2px;
+    font-size: 12px;
+}
+footer .group-addr .addr-area .addr{}
+footer .group-addr .addr-area .tel{}
+footer .group-addr .addr-area .copyright{}
+
+footer .group-addr .tel-area{}
+footer .group-addr .tel-area .tel-logo{}
+
+footer .group-addr .addr-area .addr-box .addr{}
+footer .group-addr .addr-area .addr-box .tel{}
+footer .group-addr .addr-area .addr-box .copyright{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
